@@ -49,9 +49,9 @@ class Character extends Model
         return $this->hasMany('App\Event');
     }
     
-    public function Url()
+    public function urls()
     {
-        return $this->hasMany('App\url');
+        return $this->hasMany('App\Url');
     }    
 
 }

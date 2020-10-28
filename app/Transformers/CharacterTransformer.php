@@ -35,26 +35,26 @@ class CharacterTransformer extends TransformerAbstract
 
     public function includeSeries(Character $character)
     {
-        $comics = Character::find($character->getId())->comics;
-        return $this->collection($comics, new ComicsTransformer, 'comics');
+        $series = Character::find($character->getId())->series;
+        return $this->collection($series, new SeriesTransformer, 'series');
     }
     
     public function includeStories(Character $character)
     {
-        $comics = Character::find($character->getId())->comics;
-        return $this->collection($comics, new ComicsTransformer, 'comics');
+        $stories = Character::find($character->getId())->stories;
+        return $this->collection($stories, new StoriesTransformer, 'stories');
     }
     
     public function includeEvents(Character $character)
     {
-        $comics = Character::find($character->getId())->comics;
-        return $this->collection($comics, new ComicsTransformer, 'comics');
+        $events = Character::find($character->getId())->events;
+        return $this->collection($events, new EventsTransformer, 'events');
     }
     
     public function includeUrls(Character $character)
     {
-        $comics = Character::find($character->getId())->comics;
-        return $this->collection($comics, new ComicsTransformer, 'comics');
+        $urls = Character::find($character->getId())->urls;
+        return $this->collection($urls, new UrlsTransformer, 'urls');
     }   
 
 }
