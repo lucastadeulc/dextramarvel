@@ -3,7 +3,7 @@
 ## Requisitos Gerais
 
 1- Composer<br>
-2- Algum database
+2- Algum Database
 
 
 ## Como Rodar
@@ -11,7 +11,7 @@
 
 2- <code>composer install</code>
 
-3- Alterar .env.example para as configurações de banco de dados, criar um arquivo .env com as informações alteradas.
+3- Criar um arquivo .env com base .env.example, alterar as configurações de banco de dados do arquivo criado.
 
 4- <code>php artisan migrate</code>
 
@@ -19,8 +19,9 @@
 
 6- <code>vendor/bin/phpunit</code>
 
-7- <code>php -S localhost:8000 -t blog/public</code>
+7- <code>php -S localhost:8000 -t public</code>
 
+8- Pronto para usar
 
 ## Descrição:
 Minha opção inicial tinha sido o Yii Framework até pelos requisitos da vaga, mas como não pude trabalhar no desafio até a segunda feira, 
